@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="encryption.view.EncryptionGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="12" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="1" left="1" bottom="1" right="1"/>
+    <constraints>
+      <xy x="20" y="20" width="794" height="549"/>
+    </constraints>
+    <properties>
+      <background color="-12828863"/>
+      <foreground color="-12828863"/>
+      <inheritsPopupMenu value="false"/>
+      <minimumSize width="500" height="400"/>
+      <preferredSize width="500" height="400"/>
+      <visible value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="c4571" class="javax.swing.JTextField" binding="fileLocationTextField" custom-create="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10658467"/>
+          <caretColor color="-986896"/>
+          <disabledTextColor color="-10658467"/>
+          <focusable value="true"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+        </properties>
+      </component>
+      <component id="eab5c" class="javax.swing.JButton" binding="fileLocationButton" custom-create="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10658467"/>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="true"/>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="fa7a9" class="javax.swing.JLabel" binding="fileLocationLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <horizontalAlignment value="11"/>
+          <text value="File Location:"/>
+        </properties>
+      </component>
+      <grid id="5fae8" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d8aa0" class="javax.swing.JSeparator">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10658467"/>
+              <enabled value="false"/>
+              <foreground color="-10658467"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="6782d" class="javax.swing.JTextArea" binding="encyptionTextArea" custom-create="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10658467"/>
+          <caretColor color="-986896"/>
+          <disabledTextColor color="-10658467"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b19f3" class="javax.swing.JLabel" binding="textToEncryptLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <text value="Text To Encrypt:"/>
+        </properties>
+      </component>
+      <grid id="211c0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="a64c3" class="javax.swing.JLabel" binding="typeOfEncryptionLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <horizontalAlignment value="11"/>
+          <horizontalTextPosition value="11"/>
+          <text value="Type of Encryption:"/>
+          <verifyInputWhenFocusTarget value="true"/>
+        </properties>
+      </component>
+      <grid id="5824a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c68f" class="javax.swing.JSeparator">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-10658467"/>
+              <enabled value="false"/>
+              <foreground color="-10658467"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="9f177" class="javax.swing.JLabel" binding="levelOfEncryptionLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <horizontalAlignment value="11"/>
+          <text value="Level of Encryption:"/>
+        </properties>
+      </component>
+      <component id="e074e" class="javax.swing.JComboBox" binding="typeOfEncryptionComboBox" custom-create="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <doubleBuffered value="false"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusable value="false"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+          <inheritsPopupMenu value="false"/>
+          <lightWeightPopupEnabled value="true"/>
+          <model>
+            <item value="MD5"/>
+            <item value="SHA-1"/>
+            <item value="SHA-224"/>
+            <item value="SHA-256"/>
+            <item value="SHA-384"/>
+            <item value="SHA-512"/>
+          </model>
+          <opaque value="true"/>
+          <popupVisible value="false"/>
+          <selectedIndex value="3"/>
+        </properties>
+      </component>
+      <component id="14f26" class="javax.swing.JComboBox" binding="levelOfEncryptionComboBox" custom-create="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+          <model>
+            <item value="Single Encryption"/>
+            <item value="Double Encryption"/>
+            <item value="Triple Encryption"/>
+          </model>
+        </properties>
+      </component>
+      <grid id="d00b0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="bc45c" class="javax.swing.JButton" binding="executeButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <text value="Execute"/>
+        </properties>
+      </component>
+      <grid id="b9a0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="4" row-span="12" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="21c34" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="12" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="d959f" class="javax.swing.JTextArea" binding="outputTextArea" custom-create="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10658467"/>
+          <editable value="false"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-986896"/>
+          <lineWrap value="false"/>
+        </properties>
+      </component>
+      <component id="8f897" class="javax.swing.JLabel" binding="outputLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="12" style="1"/>
+          <foreground color="-986896"/>
+          <text value="Output:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
