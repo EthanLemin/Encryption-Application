@@ -116,7 +116,7 @@ public class Controller {
                         StringBuilder sb = new StringBuilder();
                         for (int i = 0; i < hashed.size() && i < unhashed.size(); i++) {
                             sb.append("\n");
-                            sb.append(String.format("Unhashed - %s %nHashed -%s%n", unhashed.get(i), hashed.get(i)));
+                            sb.append(String.format("Unhashed - %s %nHashed - %s%n", unhashed.get(i), hashed.get(i)));
                         }
                         out.printf("%s Encryption - Level %d: %n%s", type, selectedLevel + 1, sb);
                         JOptionPane.showMessageDialog(view, "Save Complete.");
@@ -133,7 +133,7 @@ public class Controller {
                 // Prints to output text field
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < hashed.size() && i < unhashed.size(); i++) {
-                    sb.append(String.format("%s Encyption - Level %d: %nUnhashed - %s %nHashed -%s%n%n",
+                    sb.append(String.format("%s Encryption - Level %d: %nUnhashed - %s %nHashed - %s%n%n",
                             type, selectedLevel + 1, unhashed.get(i), hashed.get(i)));
                 }
                 viewForm.getOutputTextArea().setText(sb.toString());

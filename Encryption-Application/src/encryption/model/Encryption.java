@@ -8,20 +8,19 @@ public class Encryption implements IEncryption {
     @Override
     public String hashing(String mdType, String unhashed, int passover) {
         try {
-            MessageDigest md = MessageDigest.getInstance(mdType);
             StringBuilder sb = new StringBuilder();
-            byte[] bin = unhashed.getBytes();
-            byte[] hash = null;
             for (int i = 0; i < passover; i++) {
+                MessageDigest md = MessageDigest.getInstance(mdType);
+                byte[] hash = unhashed.getBytes();
+
                 md.reset();
-                if(i == 0) {
-                    hash = md.digest(bin);
-                } else {
-                    hash = md.digest(hash);
+                hash = md.digest(hash);
+
+                sb.setLength(0);
+                for (byte b : hash) {
+                    sb.append(String.format("%02x", b));
                 }
-            }
-            for (byte b : hash) {
-                sb.append(String.format("%02x", b));
+                unhashed = sb.toString();
             }
             return sb.toString();
         } catch (NoSuchAlgorithmException nsa) {
